@@ -118,7 +118,7 @@ const ProjectModal: React.FC<{
                     key={idx}
                     style={[styles.techBadge, { backgroundColor: theme.accentLight }]}
                   >
-                    <Text style={[styles.techText, { color: theme.accent }]}>
+                    <Text style={[styles.techText, { color: theme.text }]}>
                       {tech}
                     </Text>
                   </View>
@@ -288,7 +288,7 @@ const ProjectCard: React.FC<{ item: any; theme: any; index: number; onPress: () 
             key={idx}
             style={[styles.techBadge, { backgroundColor: theme.accentLight }]}
           >
-            <Text style={[styles.techText, { color: theme.accent }]}>
+            <Text style={[styles.techText, { color: theme.text }]}>
               {tech}
             </Text>
           </View>
@@ -412,7 +412,7 @@ export const ProjectsSection: React.FC<Props> = ({ theme }) => {
           <View style={[styles.titleUnderline, { backgroundColor: theme.accent }]} />
         </View>
         <View style={[styles.countBadge, { backgroundColor: theme.accentLight }]}>
-          <Text style={[styles.countText, { color: theme.accent }]}>
+          <Text style={[styles.countText, { color: theme.text }]}>
             {projects.length}
           </Text>
         </View>

@@ -92,7 +92,7 @@ const SkillBadge: React.FC<{
           <Ionicons
             name={getSkillIcon(skill.name) as any}
             size={18}
-            color={theme.accent}
+            color={theme.text}
           />
         </View>
         <Text style={[styles.skillText, { color: theme.text }]}>
@@ -132,7 +132,7 @@ export const SkillsSection: React.FC<Props> = ({ theme }) => {
           <View style={[styles.titleUnderline, { backgroundColor: theme.accent }]} />
         </View>
         <View style={[styles.countBadge, { backgroundColor: theme.accentLight }]}>
-          <Text style={[styles.countText, { color: theme.accent }]}>
+          <Text style={[styles.countText, { color: theme.text }]}>
             {skills.length}
           </Text>
         </View>

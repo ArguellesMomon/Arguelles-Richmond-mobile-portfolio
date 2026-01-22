@@ -22,8 +22,8 @@ export const HomeScreen = () => {
 
         <ProfileSection theme={theme} />
         <SkillsSection theme={theme} />
-        <ContactSection theme={theme} />
         <ProjectsSection theme={theme} />
+        <ContactSection theme={theme} />
       </ScrollView>
     </SafeAreaView>
   );

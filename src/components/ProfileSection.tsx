@@ -153,12 +153,12 @@ export const ProfileSection: React.FC<Props> = ({ theme }) => {
 
       {/* Name with Verified Badge */}
       <View style={styles.nameContainer}>
-        <Text style={[styles.name, { color: theme.text }]}>Momon Arguelles</Text>
+        <Text style={[styles.name, { color: theme.text }]}>Richmond Arguelles</Text>
         <TouchableOpacity activeOpacity={0.8}>
           <Ionicons
             name="checkmark-circle"
             size={24}
-            color={theme.accent}
+            color={theme.text}
             style={styles.verifiedIcon}
           />
         </TouchableOpacity>
@@ -166,8 +166,8 @@ export const ProfileSection: React.FC<Props> = ({ theme }) => {
 
       {/* Role/Title with Icon */}
       <View style={[styles.roleContainer, { backgroundColor: theme.accentLight }]}>
-        <Ionicons name="code-slash" size={16} color={theme.accent} />
-        <Text style={[styles.role, { color: theme.accent }]}>
+        <Ionicons name="code-slash" size={16} color={theme.text} />
+        <Text style={[styles.role, { color: theme.text }]}>
           Developer
         </Text>
         <View style={[styles.proTag, { backgroundColor: theme.accent }]}>
@@ -184,7 +184,7 @@ export const ProfileSection: React.FC<Props> = ({ theme }) => {
             onPress={() => Linking.openURL(link.url)}
             activeOpacity={0.7}
           >
-            <Ionicons name={link.icon as any} size={20} color={theme.accent} />
+            <Ionicons name={link.icon as any} size={20} color={theme.text} />
           </TouchableOpacity>
         ))}
       </View>
@@ -214,7 +214,7 @@ export const ProfileSection: React.FC<Props> = ({ theme }) => {
             <View style={[styles.statIconContainer, { backgroundColor: theme.accentLight }]}>
               <Ionicons name={stat.icon as any} size={48} color={theme.accent} />
             </View>
-            <Text style={[styles.statNumber, { color: theme.accent }]}>
+            <Text style={[styles.statNumber, { color: theme.text }]}>
               {stat.number}
             </Text>
             <Text style={[styles.statLabel, { color: theme.secondaryText }]}>
@@ -271,8 +271,8 @@ export const ProfileSection: React.FC<Props> = ({ theme }) => {
           onPress={handleDownloadCV}
           activeOpacity={0.8}
         >
-          <Ionicons name="download-outline" size={18} color={theme.accent} />
-          <Text style={[styles.secondaryButtonText, { color: theme.accent }]}>
+          <Ionicons name="download-outline" size={18} color={theme.text} />
+          <Text style={[styles.secondaryButtonText, { color: theme.text }]}>
             Download CV
           </Text>
         </TouchableOpacity>

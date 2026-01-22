@@ -145,7 +145,7 @@ const ContactCard: React.FC<{
             { backgroundColor: theme.accentLight },
           ]}
         >
-          <Ionicons name={item.icon as any} size={22} color={theme.accent} />
+          <Ionicons name={item.icon as any} size={22} color={theme.text} />
         </View>
 
         <View style={styles.contentContainer}>
@@ -234,8 +234,8 @@ export const ContactSection: React.FC<Props> = ({ theme }) => {
           ]}
           onPress={() => Linking.openURL("https://calendar.app.google/Uu4dgYhVxgEzqJ6S9")}
         >
-          <Ionicons name="calendar-outline" size={18} color={theme.accent} />
-          <Text style={[styles.secondaryButtonText, { color: theme.accent }]}>
+          <Ionicons name="calendar-outline" size={18} color={theme.text} />
+          <Text style={[styles.secondaryButtonText, { color: theme.text }]}>
             Schedule Call
           </Text>
         </TouchableOpacity>
@@ -246,7 +246,7 @@ export const ContactSection: React.FC<Props> = ({ theme }) => {
         <Ionicons
           name="location-outline"
           size={20}
-          color={theme.accent}
+          color={theme.text}
         />
         <View style={styles.locationContent}>
           <Text style={[styles.locationTitle, { color: theme.text }]}>
